@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PARKITEZY.GO - Effortlessly find and book parking slots at affordable prices with 24/7 support. Save time and avoid parking hassles.">
+    <title>PARKITEZY.GO - Booking Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav aria-label="Main Navigation">
+        <div class="logo">
+            <h1>PARKITEZY.GO</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Dashboard Section -->
+    <section class="dashboard">
+        <div class="dashboard-header">
+            <h2> Find Your Slot </h2>
+            <p>Manage your bookings, explore available parking slots.</p>
+        </div>
+
+        
+        <!-- Available Slots -->
+        <section class="available-slots">
+            <h3>Available Parking Slots</h3>
+            <div class="slots-list">
+                <div class="slot-item">
+                    <p><strong>Location:</strong> Express Avenue Mall</p>
+                    <p><strong>Address:</strong>17, Pattullos Rd, Express Estate, Thousand Lights, Chennai, Tamil Nadu 600002 </p>
+                    <a href="{{ url_for('booking', location='express-avenue') }}">
+                        <button class="btn book-now" aria-label="Book Now">Book Now</button>
+                    </a>
+                </div>
+            </div>  
+                <!-- Add more available slots here -->
+                <section class="available-slots">
+                    <h3>Available Parking Slots</h3>
+                    <div class="slots-list">
+                        <div class="slot-item">
+                            <p><strong>Location:</strong> Phoniex Market city Mall</p>
+                            <p><strong>Address:</strong>Velachery Rd, Indira Gandhi Nagar, Velachery, Chennai, Tamil Nadu 600042 </p>
+                            <a href="{{ url_for('booking', location='phoenix-market') }}">
+                                <button class="btn book-now" aria-label="Book Now">Book Now</button>
+                            </a>
+                        </div>
+                 </div>
+        </section>
+        <section class="available-slots">
+            <h3>Available Parking Slots</h3>
+            <div class="slots-list">
+                <div class="slot-item">
+                    <p><strong>Location:</strong> VR Mall Chennai</p>
+                    <p><strong>Address:</strong> 100 Feet Rd, Thirumangalam, Anna Nagar, Chennai, Tamil Nadu 600040 </p>
+                    <a href="{{ url_for('booking', location='vr-mall') }}">
+                        <button class="btn book-now" aria-label="Book Now">Book Now</button>
+                    </a>
+                </div>
+         </div>
+</section>
+  <section class="available-slots">
+    <h3>Available Parking Slots</h3>
+    <div class="slots-list">
+        <div class="slot-item">
+            <p><strong>Location:</strong> Ampa Skywalk Mall</p>
+            <p><strong>Address:</strong>1, Nelson Manickam Rd, Aminjikarai, Chennai, Tamil Nadu 600029 </p>
+            <a href="{{ url_for('booking', location='Skywalk-mall') }}">
+                <button class="btn book-now" aria-label="Book Now">Book Now</button>
+            </a>
+        </div>
+ </div>
+  </section>
+  <section class="available-slots">
+    <h3>Available Parking Slots</h3>
+    <div class="slots-list">
+        <div class="slot-item">
+            <p><strong>Location:</strong> City Center Mall</p>
+            <p><strong>Address:</strong>10/11, Dr Radha Krishnan Salai, Loganathan Colony, Mylapore, Chennai, Tamil Nadu 600004 </p>
+            <a href="{{ url_for('booking', location='city-center') }}">
+                <button class="btn book-now" aria-label="Book Now">Book Now</button>
+            </a>
+        </div>
+ </div>
+</section>
+<section class="available-slots">
+    <h3>Available Parking Slots</h3>
+    <div class="slots-list">
+        <div class="slot-item">
+            <p><strong>Location:</strong> The Marina Mall Omr</p>
+            <p><strong>Address:</strong>1 Old Mahabalipuram Road, Chennai, Tamil Nadu 603103 · 28 km </p>
+            <a href="{{ url_for('booking', location='marina-mall') }}">
+                <button class="btn book-now" aria-label="Book Now">Book Now</button>
+            </a>
+        </div>
+ </div>
+</section>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 PARKITEZY.GO. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script><!-- You can write JavaScript functions for dynamic interactions -->
+</body>
+</html>

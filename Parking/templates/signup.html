@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>PARKITEZY.GO</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Sign Up</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<form method="POST" action="{{ url_for('signup') }}">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.username.label }}
+        {{ form.username(class="form-control") }}
+    </div>
+    <div>
+        {{ form.email.label }}
+        {{ form.email(class="form-control") }}
+    </div>
+    <div>
+        {{ form.password.label }}
+        {{ form.password(class="form-control") }}
+    </div>
+    {{ form.submit(class="btn") }}
+</form>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2023 Car Parking Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* General Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #d32f2f; /* Red background */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* About Section */
+.about-section {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.about-section h1, .about-section h2 {
+    color: #d32f2f; /* Red text */
+}
+
+/* Contact Section */
+.contact-section {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.contact-section h3 {
+    color: #d32f2f; /* Red text */
+}
+
+.contact-section ul li {
+    margin-bottom: 10px;
+}
+
+.contact-section ul li a {
+    color: #d32f2f; /* Red links */
+    text-decoration: none;
+}
+
+.contact-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback Section */
+.feedback-section {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.feedback-section h3 {
+    color: #d32f2f; /* Red text */
+}
+
+form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #d32f2f; /* Red button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #d32f2f; /* Red background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Social Media */
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.social-media a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}

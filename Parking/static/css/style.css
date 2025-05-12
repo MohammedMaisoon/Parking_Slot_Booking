@@ -1,0 +1,400 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #d32f2f; /* Red background */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+/* 
+nav .nav-links a {
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+} */
+
+nav .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #dc3545, #c82333); /* Red Gradient */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 60px; /* Account for fixed nav */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: white;
+    color: #dc3545;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #f8d7da;
+    color: #c82333;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #dc3545; /* Red */
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #dc3545;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h4 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #d82020;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.testimonial-item .author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #dc3545;
+}
+
+/* Call to Action Section */
+.cta {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #dc3545, #c82333); /* Red Gradient */
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    padding: 10px 20px;
+    background: white;
+    color: #dc3545;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: #f8d7da;
+    color: #c82333;
+}
+
+/* Footer */
+footer {
+    background: #dc3545;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Horizontal Layout Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; /* Adjust for fixed navbar */
+    padding: 20px;
+}
+
+.container .content {
+    width: 48%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: block; /* Changed from flex to block */
+    max-width: 500px;
+    margin: 80px auto 20px auto; /* Top margin adjusted for nav bar */
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #dc3545;
+    margin-bottom: 25px;
+}
+
+.container .content p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Horizontal Form Styles */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 48%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c82333;
+}
+.dashboard {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.dashboard-header h3 {
+    font-size: 24px;
+}
+
+.booking-list .booking-item {
+    background-color: #fcf5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #c71818;
+    color: rgb(245, 245, 245);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c90c0c;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Changed from row to column */
+    width: 100%;
+    max-width: 400px; /* Set maximum width for consistency */
+    margin: 0 auto; /* Center the form */
+}
+form div {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input, form .form-control {
+    width: 100%; /* Changed from 48% to 100% */
+    padding: 12px; /* Increased padding for better usability */
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form .btn, form button {
+    width: 100%; /* Changed from 48% to 100% */
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}

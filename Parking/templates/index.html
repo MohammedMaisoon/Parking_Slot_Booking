@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PARKITEZY.GO - Effortlessly find and book parking slots at affordable prices with 24/7 support. Save time and avoid parking hassles.">
+    <title>PARKITEZY.GO</title>
+    <!-- Link to external stylesheet (make sure 'style.css' is created for styling) -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Include favicon for branding (optional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav aria-label="Main Navigation">
+        <div class="logo">
+            <h1>PARKITEZY.GO</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Car Parking Booking</h1>
+            <p>Find and book parking slots effortlessly. Save time and avoid the hassle of searching for parking spaces.</p>
+            <a href="{{ url_for('signup') }}" class="btn" aria-label="Get Started with Booking">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Easy Booking</h3>
+                <p>Quick and hassle-free parking slot booking for your convenience.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Affordable Prices</h3>
+                <p>Enjoy the best rates for parking spaces tailored to your needs.</p>
+            </div>
+            <div class="feature-item">
+                <h3>24/7 Support</h3>
+                <p>We are available at all times to assist with your parking needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Sign Up</h3>
+                <p>Register for an account to begin the parking booking process.</p>
+            </div>
+            <div class="step">
+                <h3>2. Find a Slot</h3>
+                <p>Search for available parking spaces near your location.</p>
+            </div>
+            <div class="step">
+                <h3>3. Book & Park</h3>
+                <p>Complete your booking and park with ease at your selected spot.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h4>What Our Users Say</h4>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"This platform has made parking so much easier. Highly recommend it!"</p>
+                <p class="author">- John Doe</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Affordable, reliable, and efficient. I use it every day for work parking."</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Sign up now and secure your parking space in minutes.</p>
+        <a href="signup.html" class="btn" aria-label="Sign Up Now">Sign Up Today</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 PARKITEZY.GO. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript (if needed) -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

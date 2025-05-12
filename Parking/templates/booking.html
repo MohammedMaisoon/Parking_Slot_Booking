@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PARKITEZY.GO - Effortlessly find and book parking slots at affordable prices with 24/7 support. Save time and avoid parking hassles.">
+    <title>PARKITEZY.GO - Booking Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/booking.css') }}">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav aria-label="Main Navigation" class="navbar">
+        <div class="logo">
+            <h1>PARKITEZY.GO</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <div class="booking-header">
+            <h2>Complete Your Booking</h2>
+            <p>Please fill in the details below to finalize your parking booking.</p>
+        </div>
+
+        <!-- Step 1: Select Parking Slot -->
+        <div class="step">
+            <h3>Select a Parking Slot</h3>
+           <!-- In booking.html, update the form IDs -->
+                <form id="booking-form">
+           <label for="parking-slot">Parking Slot</label>
+           <select name="parking-slot" id="parking-slot" required>
+        <option value="express-avenue">Express Avenue Mall</option>
+        <option value="phoenix-market">Phoenix Market City Mall</option>
+        <option value="vr-mall">VR mall Chennai</option>
+        <option value="Skywalk-mall">Ampa Skywalk Mall</option>
+        <option value="city-center">City Center Mall</option>
+        <option value="marina-mall">The Marina Mall</option>
+    </select>
+</form>
+        </div>
+
+        <!-- Step 2: Personal Details -->
+        <div class="step">
+            <h3>Personal Information</h3>
+            <form id="personal-info-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </form>
+        </div>
+
+        <!-- Step 3: Payment Details -->
+        <div class="step">
+            <h3>Payment Information</h3>
+            <form id="payment-form">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****" required>
+
+                <label for="expiration-date">Expiration Date</label>
+                <input type="month" id="expiration-date" name="expiration-date" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </form>
+        </div>
+
+        <!-- Step 4: Review & Confirmation -->
+        <div class="step">
+            <h3>Review Your Booking</h3>
+            <div id="review-summary">
+                <p><strong>Parking Slot:</strong> <span id="review-slot">Express Avenue Mall</span></p>
+                <p><strong>Date:</strong> <span id="review-date">February 20, 2025</span></p>
+                <p><strong>Full Name:</strong> <span id="review-name">John Doe</span></p>
+                <p><strong>Email:</strong> <span id="review-email">johndoe@example.com</span></p>
+                <p><strong>Phone:</strong> <span id="review-phone">+1234567890</span></p>
+            </div>
+            <button id="confirm-booking" class="btn">Confirm Booking</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 PARKITEZY.GO. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="{{ url_for('static', filename='js/booking.js') }}"></script>
+</body>
+</html>
